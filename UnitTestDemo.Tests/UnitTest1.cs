@@ -123,14 +123,13 @@ namespace UnitTestDemo.Tests
         }
 
 
-        [Ignore]
         [TestCategory("Load Test")]
         [TestCategory("Block Coverage")]
         [TestMethod]
         public void TestBlockCoverage_ContainsBug()
         {
             Foo(true, true);
-            Foo(false, false);
+            //Foo(false, false);
         }
 
         private string Foo(bool p1, bool p2)
@@ -143,7 +142,7 @@ namespace UnitTestDemo.Tests
 
             if (p2)
             {
-                result = "P2";
+                result += "P2";
             }
 
             return result.ToString();

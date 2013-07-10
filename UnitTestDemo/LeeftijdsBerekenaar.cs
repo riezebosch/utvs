@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UnitTestDemo
 {
-    public class LeeftijdsBerekenaar
+    public class LeeftijdsBerekenaar : UnitTestDemo.ILeeftijdsBerekenaar
     {
         public int Bereken(DateTime geboortedatum)
         {
